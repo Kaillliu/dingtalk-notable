@@ -1,0 +1,41 @@
+version: 0.0.2
+type: plugin
+author: kaillliu
+name: dingtalk_notable
+label:
+  en_US: Dingtalk Multi-dimensional (AI) Table
+  ja_JP: 釘釘多維(AI)表格
+  zh_Hans: 钉钉多维(AI)表格
+  pt_BR: Dingtalk Multi-dimensional (AI) Table
+description:
+  en_US: DingTalk Multi-dimensional (AI) Table, requires the following permissions (Notable.Base., user/get.) 
+  ja_JP: 釘釘多維(AI)表格，需要开通以下权限： AI表格读/写权限，个人信息, 根据手机号获取成员基本信息权限；AI表格参考文档：https://alidocs.dingtalk.com/i/nodes/1zknDm0WRz0NZeXQuKA5pLbrWBQEx5rG?iframeQuery=utm_source%3Dportal%26utm_medium%3Dportal_recent
+  zh_Hans: 钉钉多维(AI)表格，需要开通以下权限： AI表格读/写权限，个人信息, 根据手机号获取成员基本信息权限；AI表格参考文档：https://alidocs.dingtalk.com/i/nodes/1zknDm0WRz0NZeXQuKA5pLbrWBQEx5rG?iframeQuery=utm_source%3Dportal%26utm_medium%3Dportal_recent
+  pt_BR: DingTalk Multi-dimensional (AI) Table, requires the following permissions (Notable.Base., user/get.) 
+icon: ding.png
+tags:
+  - utilities
+  - productivity
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+    tool:
+      enabled: true
+plugins:
+  tools:
+    - provider/dingtalk_notable.yaml
+meta:
+  version: 0.0.2
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-07-14T12:11:13.0685017+08:00
+privacy: PRIVACY.md
+verified: false

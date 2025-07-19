@@ -2,7 +2,7 @@ from typing import Any, Generator
 
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
-from dingtalk_api_utils import DingTalkRequest, getTableIdFromUrl
+from dingtalk_api_utils import DingTalkRequest
 
 
 class GetAllSheetsAITool(Tool):

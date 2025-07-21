@@ -11,10 +11,10 @@ The DingTalk AI Table Plugin is a collection of tools for operating on AI tables
 ## Prerequisites
 
 Using this plugin requires the following DingTalk permissions:
-- **AI表格应用读权限** (AI Table Application Read Permission)
-- **AI表格应用写权限** (AI Table Application Write Permission)
-- **个人信息权限** (Personal Information Permission)
-- **根据手机号获取成员基本信息权限** (Permission to obtain member basic information by phone number)
+- **AI表格应用读权限** (AI Table Application Read Permission: Notable.Base.Read.All	)
+- **AI表格应用写权限** (AI Table Application Write Permission: Notable.Base.Write.All	)
+- **成员信息读权限** (Personal Information Permission: qyapi_get_member )
+- **根据手机号获取成员基本信息权限** (Permission to obtain member basic information by phone number: qyapi_get_member_by_mobile )
 
 Configuration method: Log in to the DingTalk developer backend > Enterprise internal development > Find the application that needs to add permissions > Permission management > Address book management page, check enterprise employee phone number information and email and other personal information, click Apply for permission.
 
